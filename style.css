@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+
+}
+.container {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 5px;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    display: inline-block;
+    border: 1px solid #ccc;
+    padding: 12px 20px;
+    border-radius: 4px;
+    resize: vertical;
+}
+input[type=submit] {
+    border: none;
+    background-color: #40aa6d;
+    color: #fff;
+    border-radius: 4px;
+    padding: 12px 20px;
+    float: right;
+}
+input[type=submit]:hover {
+    background-color: #2e8e41;
+}
+.col-25 {
+    width: 25%;
+    float: left;
+    margin-top: 6px;
+}
+.col-75 {
+    width: 75%;
+    float: left;
+    margin-top: 6px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+@media only screen and (max-width:600px) {
+    .col-25, .col-75 {
+        width: 100%;
+    }
+}
